@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(https://www.yo-yoo.co.il/rekaim/images/uploads/background-ge6d3aaecf_1280.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 30px;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    text-decoration: underline;
+    color: white;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(251, 249, 249);
+    font-size: 40px;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+
+}
+
+.cell:hover {
+    background-color: rgb(122, 194, 249);
+}
+
+.reset-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(249, 254, 255);
+    color: rgb(6, 6, 6);
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+
+}
+
+.reset-button:hover {
+    background-color: rgb(163, 187, 239);
+}
